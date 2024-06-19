@@ -129,8 +129,8 @@ You should give me the full modified HTML code.
     prompt_template = ChatPromptTemplate.from_messages([get_system_message(), prompt])
     return prompt_template
 
-def html_generation(prompt):
-    chat_model = ChatOpenAI(model_name = "gpt-4o", temperature=1)
+def html_generation(prompt, temperature=1):
+    chat_model = ChatOpenAI(model_name = "gpt-4o", temperature=temperature)
     
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     output_path = Path(f"./output/{prompt}/{timestamp}").resolve()
@@ -157,8 +157,8 @@ def html_generation(prompt):
     
     return html_output, html_path
 
-def html_edit(prompt, html_code):
-    chat_model = ChatOpenAI(model_name = "gpt-4o", temperature=1)
+def html_edit(prompt, html_code, temperature=1):
+    chat_model = ChatOpenAI(model_name = "gpt-4o", temperature=temperature)
     
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     output_path = Path(f"./output/{prompt}/{timestamp}").resolve()
