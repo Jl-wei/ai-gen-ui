@@ -50,12 +50,15 @@ Our UI-Diffuser-v2 model is available at https://huggingface.co/Jl-wei/ui-diffus
 ## Citation
 If you find our work useful, please cite our paper:
 ```bibtex
-@misc{wei2024aiinspired,
-      title={On AI-Inspired UI-Design}, 
-      author={Jialiang Wei and Anne-Lise Courbis and Thomas Lambolais and Gérard Dray and Walid Maalej},
-      year={2024},
-      eprint={2406.13631},
-      archivePrefix={arXiv}
+@article{wei2024aiinspired,
+  author={Wei, Jialiang and Courbis, Anne-Lise and Lambolais, Thomas and Dray, Gérard and Maalej, Walid},
+  journal={IEEE Software}, 
+  title={On AI-Inspired User Interface Design}, 
+  year={2025},
+  volume={42},
+  number={3},
+  pages={50-58},
+  doi={10.1109/MS.2025.3536838}
 }
 ```
 Please note that the code and model can only be used for academic purpose.
